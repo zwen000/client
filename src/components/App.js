@@ -5,14 +5,16 @@ import StreamEdit from './streams/StreamEdit'
 import StreamShow from './streams/StreamShow'
 import StreamList from './streams/StreamList'
 import StreamDelete from './streams/StreamDelete'
+import Header from './Header';
 
-
+const KEY = "360100302157-v7gtn76rs91ahu9u1mrclpsi9c2bvb3e.apps.googleusercontent.com"
 
 const App = () => {
     return (
-        <div>
+        <div className="ui container">
             <BrowserRouter>
                 <div>
+                    <Header/>
                     <Route path='/' exact component={StreamList} />
                     <Route path='/streams/new' exact component={StreamCreate} />
                     <Route path='/streams/edit' exact component={StreamEdit} />
