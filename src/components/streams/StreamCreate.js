@@ -1,6 +1,8 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
 // reduxForm has the same functionality as connect()
+import { connect } from 'react-redux';
+import { createStream } from '../../actions';
 
 class StreamCreate extends React.Component {
 
@@ -32,11 +34,11 @@ class StreamCreate extends React.Component {
     }
 
     onSubmit(formValues) {
-        //console.log("onSubmit(formValues)", formValues);
+        console.log("onSubmit(formValues)", formValues);
     }
 
     render() {
-        console.log(this.props);
+        //console.log(this.props);
         return (
             <form
                 className="ui form error"
