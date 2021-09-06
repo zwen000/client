@@ -34,7 +34,6 @@ class StreamCreate extends React.Component {
     }
 
     onSubmit = (formValues) => {
-        //console.log("onSubmit(formValues)", formValues);
         this.props.createStream(formValues);
     }
 
